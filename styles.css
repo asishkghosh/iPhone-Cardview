@@ -1,0 +1,118 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1500px;
+}
+
+.container {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.card {
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d ;
+}
+
+.iphone {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.75s ease-out;  
+}
+
+.iphone  img {
+    width: 20rem; 
+    z-index: 2; 
+    padding-top: 10px;
+    transition: all 0.75s ease-out;  
+}
+
+.box {
+    border-radius: 25px;
+    width: 14rem;
+    height: 28rem;
+    background: linear-gradient(
+        to right,
+        rgba(18, 170, 216, 0.75),
+        rgba(224, 68, 6, 0.75)
+    );
+    position: absolute;
+    z-index: 1;
+}
+
+.info h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.75s ease-out;
+}
+
+.info h3{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 15px;
+    font-weight: bold;
+    color: #585858;
+    transition: all 0.75s ease-out;  
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    background: none;
+    border: none;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button.active {
+background: #585858;
+color: white;
+}
+
+.purchase {
+    margin-top: 2rem;
+    padding-bottom: 30px;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button{
+    width: 100%;
+    background: #585858;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    padding: 1rem 0rem ;
+    font-weight: bold;
+    font-size: 20px;
+}
